@@ -24,29 +24,22 @@
     <section id="account">
       <a href="#">Log In</a>
     </section>
-    <section class="flex" id="main-nav">
-      <section class="flex" id="product">
-        <ul class="flex">
-          <li id="shop-menu-item"><a href="#">Shop</a></li>
-          <li>Cleanses</li>
-          <li>Build a box</li>
-        </ul>
-      </section>
-      <section id="logo">
-        <img src="./image/logo.png" />
-      </section>
-      <section id="about">
-        <ul>
-          <li>The unconventional</li>
-          <li>Who we are</li>
-        </ul>
-      </section>
+    <section id="main-nav">
+
+      <ul class="top-menu flex evenly">
+        <li id="shop-menu-item"><a href="#">Shop</a></li>
+        <li><a href="#">Cleanses</a></li>
+        <li><a href="#">Build a box</a></li>
+        <li><img src="./image/logo.png" /></li>
+        <li><a href="#">The unconventional</a></li>
+        <li><a href="#">Who we are</a></li>
+      </ul>
     </section>
     <section id="cart">
       <a href="#">Cart</a>
     </section>
     <div class="sub-menu-container">
-      <ul class="sub-menu-headers">
+      <ul class="sub-menu-headers flex">
         <li>Drinks
           <ul class="flex column">
             <li><a href="#">All</a></li>
@@ -88,14 +81,14 @@
     </div>
   </nav>
   <main>
-    <section id="hero">
+    <section class="flex" id="hero">
       <div class="cta">
         <h2>We ship overnight nationwide</h2>
         <p>We deliver Tuesday-Friday and offer the ability to schedule ahead.</p>
         <button>View Menu</button>
       </div>
     </section>
-    <section id="buy-the-box">
+    <section id="buy-the-box" class="flex">
       <div class="headline">
         <h3>You buy it by the box</h3>
         <p>Choose 7-8 products of your liking and have it delivered to your door as often as you want. Your pick, every
@@ -116,10 +109,20 @@
           <aside>We ship overnight</aside>
         </div>
       </div>
-      <button class="cta">Shop the menu</button>
+      <div class="cta">
+        <button class="cta">Shop the menu</button>
+      </div>
     </section>
     <section id="drinks">
-      <section class="slider">
+      <div class="slider-item" id="slide-1">
+        <div class="headline">
+          <h3>Drinks</h3>
+          <h4>Juices</h4>
+          <p>Our juices are individually crafted to flush, detoxify, hydrate and strengthen the body.</p>
+        </div>
+        <button class="cta">View juice menu</button>
+      </div>
+      <!-- <section class="slider">
         <div class="slider-dots">
           <div class="slider-dot" id="dot-1">
             *
@@ -154,7 +157,7 @@
             <p>Our juices are individually crafted to flush, detoxify, hydrate and strengthen the body.</p>
           </div>
         </div>
-      </section>
+      </section> -->
       <section id="other-drinks">
         <div class="headline">
           <h4>Pick your pleasure</h4>

@@ -1,9 +1,27 @@
+/* Font */
+@font-face {
+  font-family: 'DIN';
+  src: url('./../font/din.ttf')  format('truetype');
+}
+
+
 /* Structural styles */
 body {
   margin: 0;
   background:#fff;
   position: relative;
   /* padding: 0 30px; */
+  font-family: "DIN", sans-serif;
+}
+
+a, a:visited {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out;
+}
+
+a:hover {
+  color: #ff5e48;
 }
 
 /*** Section styles ***/
@@ -16,6 +34,11 @@ body {
   left: 0;
   text-align: center;
   background: #231f20;
+  transition: height 0.2s ease;
+}
+
+#pencil-ad.closed {
+  height: 0;
 }
 
 #pencil-ad span {
@@ -46,7 +69,7 @@ nav {
   box-sizing: border-box;
   height: 72px;
   width: 100%;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #e1e1e1;
   text-transform: uppercase;
   position: relative;
 }
@@ -64,12 +87,39 @@ nav ul li {
 .sub-menu-container {
   display: none;
   position: absolute;
-  width: 100vw;
-  bottom: 0px;
+  width: 100%;
+  height: 320px;
+  bottom: -1px;
   left: 0;
-  background: green;
+  background-color: #fff;
   transform: translateY(100%);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-image: url(./../image/menu-bg.png);
+  background-size: contain;
 }
+
+.sub-menu-container .sub-menu-headers {
+  max-width: 690px;
+  margin-top: 30px;
+  margin-left: 115px;
+  align-items: baseline;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+.sub-menu-container .sub-menu-headers li ul {
+  margin-top: 10px;
+  pointer-events: all;
+}
+
+.sub-menu-container .sub-menu-headers li ul li {
+  margin: 10px 0;
+  font-size: 12px;
+  pointer-events: all;
+}
+
+
 
 .show {
   display: block;
@@ -84,6 +134,143 @@ nav ul li {
   flex-grow: 1;
 }
 
+.top-menu li {
+  line-height: 72px;
+}
+
+#shop-menu-item.highlight a {
+  color: #ff5e48;
+}
+
+#main-nav ul li img {
+  padding: 0 20px;
+  vertical-align: middle;
+}
+
+/* Top CTA */
+#hero {
+  min-height: 540px;  
+  background-image: url('./../image/top-hero.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#hero div.cta {
+  justify-self: auto;
+  margin-left: 130px;
+  width: 470px;
+}
+
+#hero div.cta h2 {
+  text-transform: uppercase;
+  font-size: 52px;
+}
+
+#hero div.cta p {
+  margin: 1em 0 2em;
+  font-size: 18px;
+  max-width: 420px;
+}
+
+div.cta button {
+  border: 1px solid #ff5e48;
+  font-family: "DIN", sans-serif;
+  text-transform: uppercase;
+  background: transparent;
+  color: #ff5e48;
+  font-size: 15px;
+  height: 50px;
+  width: 170px;
+  cursor: pointer;
+  transition: all 0.15s ease-out;
+}
+
+div.cta button:hover {
+  background: #ff5e48;
+  color: #fff;
+}
+
+/* Buy the box */
+#buy-the-box {
+  text-align: center;
+  flex-flow: wrap;
+  justify-content: center;
+  min-height:500px;
+}
+
+.headline h3 {
+  text-transform: uppercase;
+  font-size: 32px;
+}
+
+.headline p {
+  max-width: 570px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.box-steps {
+  width: 100%;
+  max-width: 770px;
+  margin: 0 auto;
+}
+
+.box-steps .flex-item {
+  width: 170px;
+  height: 100px;
+  position: relative;
+}
+
+.box-steps .flex-item .step {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 127px;
+  color: #ff5e48;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.box-steps .flex-item p {
+  position: relative;
+  z-index: 3;
+  border-bottom: 1px solid #000;
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.box-steps .flex-item aside {
+  position: relative;
+  z-index: 3;
+  text-align: left;
+  font-size: 12px;
+  margin-top: -10px;
+  max-width: 50px;
+}
+
+div.cta {
+  width: 100%;
+}
+
+/* Drinks */
+#drinks {
+  text-align: center;
+  flex-flow: wrap;
+  justify-content: center;
+  min-height:540px;
+  background-image: url('./../image/drinks-bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#drinks .headline h3 {
+  text-transform: uppercase;
+  font-size: 52px;
+}
+
 /* shared styles */
 .flex {
   display: flex;
@@ -94,4 +281,8 @@ nav ul li {
 .column {
   flex-flow: column;
   align-items: flex-start;
+}
+
+.evenly {
+  justify-content: space-evenly;
 }
