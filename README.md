@@ -6,7 +6,7 @@ This mock-up was built with HTML5, CSS, and jQuery. My process for rapidly build
 ## What I Wasn't Able to Finish :construction:
 * Mobile responsiveness :no_mobile_phones:
   * In the context of the timeline provided, I styled a lot of elements using an approach that is quick-and-dirty and **horrid** for extensibility and responsiveness - [**__Magic Numbers__**](https://css-tricks.com/magic-numbers-in-css/)
-  * The mock-up falls to its knees below a view-width of 1000px!
+  * The mock-up falls to its knees below a view-width of 1200px!
   * I would work on creating mobile designs and construct the page based on those first (I have a few years of experience with Photoshop for wireframes and web designs and a little more than a year of experience with Adobe XD for wireframes)
 * Implementing styles beyond the 'Buy the box' section :eyes:
 * A cleaner implementation of the sub-menu interaction :hand:
