@@ -1,0 +1,26 @@
+{
+  "name": "skybound-juice",
+  "version": "0.1.0",
+  "description": "Let's get this juice!",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaneallantaylor/skybound-juice.git"
+  },
+  "keywords": [
+    "javascript",
+    "html",
+    "css",
+    "frontend",
+    "design"
+  ],
+  "author": "Shane Taylor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shaneallantaylor/skybound-juice/issues"
+  },
+  "homepage": "https://github.com/shaneallantaylor/skybound-juice#readme"
+}

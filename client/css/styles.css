@@ -1,0 +1,97 @@
+/* Structural styles */
+body {
+  margin: 0;
+  background:#fff;
+  position: relative;
+  /* padding: 0 30px; */
+}
+
+/*** Section styles ***/
+/* top ad / pencil ad */
+#pencil-ad {
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background: #231f20;
+}
+
+#pencil-ad span {
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#pencil-ad a, #pencil-ad a:visited {
+  color: #fff;
+}
+
+#pencil-ad button {
+  background: #231f20;
+  border:none;
+  color: #fff;
+  position: absolute;
+  right: 30px;
+  top: 0;
+  line-height: 40px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+/* nav/menu styles */
+nav {
+  padding: 0px 30px 0px;
+  box-sizing: border-box;
+  height: 72px;
+  width: 100%;
+  border-bottom: 1px solid #000;
+  text-transform: uppercase;
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+.sub-menu-container {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  bottom: 0px;
+  left: 0;
+  background: green;
+  transform: translateY(100%);
+}
+
+.show {
+  display: block;
+}
+
+#account a {
+  color: #231f20;
+  text-decoration: none;
+}
+
+#main-nav {
+  flex-grow: 1;
+}
+
+/* shared styles */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.column {
+  flex-flow: column;
+  align-items: flex-start;
+}
